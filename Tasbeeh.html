@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tasbeeh.css">
+</head>
+<body>
+  <div class="Container">
+    <p id="Par1" ></p>
+     <button id="BtnC">+</button>
+   <button id="BtnR">↩</button>
+   
+</div>
+    <script>
+
+
+   
+  const IncremButton = document.getElementById('BtnC');
+    
+  const DecreButton = document.getElementById('BtnR');
+  const display = document.getElementById('Par1');
+
+
+  let count = 0;
+
+
+  IncremButton.addEventListener('click', () => {
+    count++;                
+   Par1.textContent = count; 
+
+
+
+
+
+  });
+
+DecreButton.addEventListener('click', () => {
+   count = 0;                
+  Par1.textContent = count; });
+
+
+
+</script>
+
+  
+
+
+
+
+
+</body>
+</html>
